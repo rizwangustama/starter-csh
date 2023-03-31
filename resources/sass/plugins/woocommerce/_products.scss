@@ -1,0 +1,17 @@
+.woocommerce-loop-product__link {
+	@apply relative;
+	.wc-block-grid__product-onsale, .onsale {
+		@apply absolute left-0 top-0;
+	}
+	img {
+		@apply w-full;
+	}
+}
+
+.archive-header .woocommerce-notices-wrapper {
+	@apply hidden;
+}
+
+.added_to_cart.wc-forward {
+	@apply mx-3 underline;
+}

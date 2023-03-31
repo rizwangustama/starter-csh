@@ -1,0 +1,202 @@
+.woocommerce-error li:after{
+    content:'';
+    clear:both;
+    display: block;
+    margin-bottom:5px;
+}
+/* Form Login */
+.woocommerce #customer_login {
+    @apply flex flex-col gap-y-5;
+    .u-column1, .u-column2 {
+        @apply w-full float-none max-w-[480px];
+    }
+    h2 {
+        @apply mb-5;
+    }
+}
+
+.woocommerce #customer_login .u-column1{
+    @apply mx-auto;
+}
+.woocommerce #customer_login .u-column1 .login-title{
+    @apply text-3xl font-bold text-black text-center;
+}
+
+.woocommerce #customer_login .u-column1 .login-subtitle{
+    @apply text-lg text-black text-center mt-4;
+}
+
+.woocommerce #customer_login .u-column1 .woocommerce-label{
+    @apply text-center text-secondary mb-4;
+}
+.woocommerce #customer_login .u-column1 .woocommerce-Input{
+    @apply border border-[#D9D9D9] h-[42px] px-2.5;
+}
+
+
+.woocommerce #customer_login .wrapper-button-login {
+    @apply flex flex-col;
+}
+
+.woocommerce #customer_login .woocommerce-form-login__submit {
+    @apply text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline bg-[#63A27A] text-white  hover:bg-primary  hover:border-primary mr-0;
+}
+
+.woocommerce #customer_login .woocommerce-LostPassword {
+    @apply text-center text-black py-5;
+}
+
+
+.woocommerce #customer_login .u-column2{
+    @apply mx-auto;
+}
+
+/* end form Login */
+
+/* form register */
+.woocommerce #customer_login .u-column2 .title-register{
+    @apply text-[30px] text-black font-bold text-center;
+}
+
+.woocommerce #customer_login .u-column2 .woocommerce-Input{
+    @apply border border-[#D9D9D9] h-[42px] px-2.5; 
+}
+.woocommerce #customer_login .u-column2 .woocommerce-label{
+    @apply text-center text-secondary mb-4;
+}
+.woocommerce #customer_login .u-column2  .woocommerce-form-register__submit{
+    @apply text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline bg-[#63A27A] text-white  hover:bg-primary  hover:border-primary mr-0 w-full;
+}
+.woocommerce #customer_login .u-column2  .woocommerce-privacy-policy-text{
+    @apply text-altBlack text-sm mb-4 text-center;
+}
+
+.woocommerce #customer_login .u-column2 .register-info {
+    @apply text-altBlack text-sm mt-4 text-center;
+}
+/* End form register */
+
+
+/* Navigation Dashboard */
+.woocommerce-MyAccount-navigation ul li{
+    @apply py-2.5 text-primary font-bold px-5;
+}
+.woocommerce-MyAccount-navigation .is-active {
+    @apply bg-primary text-white;
+}
+/* End Navigation Dashboard */
+
+/* Edit Account */
+.edit-account .woocommerce-Input{
+    @apply border border-[#D9D9D9] h-[42px] px-2.5;
+}
+.edit-account .woocommerce-edit-account__button {
+    @apply  mr-0 text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline 
+    bg-[#63A27A] text-white hover:bg-primary hover:border-primary;
+}
+
+
+/* .woocommerce-page table.cart td.actions,
+.woocommerce-cart table.cart td.actions .coupon {
+    @apply hidden  #{!important};
+} */
+
+.woocommerce .woocommerce-error .button, 
+.woocommerce .woocommerce-info .button, 
+.woocommerce .woocommerce-message .button,  
+.woocommerce-page .woocommerce-info .button, 
+.woocommerce-page .woocommerce-error .button,
+.woocommerce-page .woocommerce-message .button
+{
+    @apply text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline 
+    bg-[#63A27A] hover:bg-primary  hover:border-primary  text-white mr-0 float-none md:float-right block md:inline-block mb-5 md:mb-0;
+}
+
+.woocommerce .woocommerce-error .button:hover, .woocommerce-page 
+.woocommerce-error .button:hover, 
+.woocommerce-page .woocommerce-message .button:hover, 
+.woocommerce .woocommerce-message .button:hover{
+    @apply hover:bg-primary  hover:border-primary text-white text-base;
+}
+
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover{
+    @apply hover:bg-primary  hover:border-primary text-white;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button{
+    &:not(.add_media) {
+        @apply rounded-full border py-2 px-5 min-w-[150px] border-transparent transition-all duration-300 hover:no-underline text-base bg-[#63A27A] text-white hover:bg-primary hover:border-primary cursor-pointer;
+        &.product_type_external {
+            @apply bg-transparent p-0 text-primary underline;
+            &:hover {
+                @apply bg-transparent p-0 text-primary underline border-transparent;
+            }
+        }
+    }
+}
+
+.woocommerce p.return-to-shop a.button.wc-backward {
+    
+    @apply rounded-full border border-transparent transition-all duration-300 hover:no-underline  text-base bg-[#63A27A] text-white hover:bg-primary hover:border-primary;
+}
+/* End Edit Account */
+
+/* Address */
+.wrapper-addresses{
+    margin-top: 20px;
+}
+.wrapper-addresses .col-1{
+    padding: 20px #{!important};
+    @apply border border-[#D9D9D9] flex justify-between items-center;
+}
+.wrapper-addresses .col-1 h3{
+    @apply font-bold text-black;
+}
+.wrapper-addresses .col-2 h3{
+    @apply font-bold text-black;
+}
+.wrapper-addresses .col-1 a{
+    @apply text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline 
+    bg-[#63A27A] hover:bg-primary  hover:border-primary  text-white;
+}
+.wrapper-addresses .col-2 a{
+    @apply text-base py-2 px-6 rounded-full border border-transparent transition-all duration-300 hover:no-underline 
+    bg-[#63A27A] hover:bg-primary  hover:border-primary  text-white;
+}
+/* .wrapper-addresses .col-2 .address-wrapper__main{
+    @apply flex;
+} */
+.wrapper-addresses .col-1 address{
+    @apply text-altBlack;
+}
+.wrapper-addresses .col-2 address{
+    @apply text-altBlack;
+}
+.wrapper-addresses .col-2{
+    padding: 20px #{!important};
+    @apply border border-[#D9D9D9] flex justify-between items-center;
+}
+/* EndAddress */
+
+/* Dashboard */
+.woocommerce-MyAccount-content{
+    @apply p-5 border border-[#D9D9D9];
+}
+/* endDashboard */
+
+button.insert-media.add_media {
+    @apply mb-2;
+}
+
+.post-lists-item {
+    a svg {
+        @apply w-5 h-5;
+    }
+}
+/* EndWoocommerce */

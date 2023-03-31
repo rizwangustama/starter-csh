@@ -1,0 +1,53 @@
+table {
+    &.woocommerce-grouped-product-list,
+    &.woocommerce-product-attributes {
+        @apply w-full;
+        tr td,
+        tr th {
+            @apply py-2 px-3 border border-neutral text-left;
+        }
+        @apply mb-5;
+    }
+}
+
+table.shop_table {
+    @apply ml-auto;
+    thead {
+        @apply bg-light;
+        th {
+            @apply border-light #{!important};
+        }
+    }
+    th, td {
+        @apply border-neutral border py-2 px-4 lg:py-4 lg:px-6 #{!important}; 
+    }
+    &.account-orders-table,
+    &.cart,
+    &.subscriptio-account-subscriptions-table,
+    &.woocommerce-table--order-details {
+        @apply w-full my-5;
+        th, td {
+            @apply text-left;
+        }
+    }
+}
+
+.cart_totals table.shop_table.shop_table_responsive {
+    @apply max-w-full w-[400px];
+}
+
+table.cart td.product-remove {
+    border:solid 1px #CDCDD0 !important;
+    text-align:center;
+}
+
+table.cart td.product-remove a.remove {
+    @apply text-primary text-3xl #{!important};
+}
+
+table.woocommerce-checkout-review-order-table {
+    @apply w-full;
+    td, th {
+        @apply text-right;
+    }
+}

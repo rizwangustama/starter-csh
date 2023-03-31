@@ -1,0 +1,26 @@
+table.cart td.actions {
+    border-width:1px;
+}
+
+.wc-proceed-to-checkout {
+    @apply lg:text-right;
+}
+.wc-proceed-to-checkout .button {
+    @apply ml-auto text-lg inline-block #{!important};  
+}
+
+.wc-proceed-to-checkout {
+    @apply text-right;
+}
+
+.woocommerce-order-overview {
+    @apply bg-neutral rounded-lg mt-5 #{!important};
+    
+    li {
+        @apply border border-b border-dashed border-white border-opacity-50;
+    }
+}
+
+.woocommerce-order-details h2 {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold;
+}

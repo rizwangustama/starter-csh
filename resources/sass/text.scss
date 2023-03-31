@@ -1,0 +1,81 @@
+/**
+ *
+ * Text classes
+ *
+ */
+
+ @layer components {
+    /* Display */
+    .display-1 {
+        @apply text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug
+    }
+
+    .display-2 {
+        @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-snug
+    }
+
+    .display-3 {
+        @apply text-xl md:text-2xl lg:text-3xl font-bold leading-snug
+    }
+
+    /* Heading */
+    .product_title,
+    .entry-title,
+    .woocommerce-products-header__title,
+    #customer_login h2,
+    .heading-1 {
+        @apply text-xl sm:text-2xl md:text-3xl font-semibold;
+    }
+
+    .heading-2 {
+        @apply text-2xl font-semibold;
+    }
+
+    .woocommerce-MyAccount-content h3,
+    .woocommerce-checkout h3,
+    .heading-3 {
+        @apply text-base sm:text-lg md:text-xl font-medium;
+    }
+
+    /* Paragraph */
+    .paragraph {
+        @apply text-base leading-relaxed;
+    }
+    .paragraph-2 {
+        @apply text-xs leading-5;
+    }
+
+    .display-1,
+    .display-2,
+    .display-3,
+    .heading-1,
+    .heading-2,
+    .heading-3,
+    form.checkout.woocommerce-checkout,
+    .woocommerce-MyAccount-content,
+    .paragraph {
+        label {
+            @apply font-semibold;
+        }
+        a {
+            @apply underline text-altGreen underline-offset-1 hover:underline-offset-2;
+        }
+        strong,
+        b {
+            @apply font-bold;
+        }
+        p,li {
+            @apply leading-loose mb-5;
+        }
+    }
+
+    .woocommerce-billing-fields h3,
+    #order_review_heading {
+        @apply text-xl sm:text-2xl md:text-3xl font-semibold mb-5;
+    }
+
+    #order_review_heading {
+        @apply lg:text-right;
+    }
+
+}

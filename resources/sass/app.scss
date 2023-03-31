@@ -1,0 +1,104 @@
+@import "text";
+@import "buttons";
+@import "woocommerce";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WP Blocks */
+.wp-block-cover {
+    border-radius: 0.25rem;
+}
+
+@layer base {
+    html, body {
+        @apply font-body;
+    }
+}
+.line {
+    @apply h-[0.5px] w-full bg-white opacity-60 flex relative z-20;
+}
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.paragraph {
+    a {
+        @apply underline text-altGreen underline-offset-1 hover:underline-offset-2;
+    }
+    strong,
+    b {
+        @apply font-bold;
+    }
+    h1, .h1 {
+        @apply text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-3 mb-5;
+    }
+    h2, .h2 {
+        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2 mb-4;
+    }
+    h3, .h3 {
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-1 mb-3;
+    }
+    h4, .h4 {
+        @apply text-xl lg:text-3xl font-semibold my-2;
+    }
+    h5, .h5{
+        @apply text-lg lg:text-2xl font-semibold my-1;
+    }
+    h6, .h6{
+        @apply text-base lg:text-xl font-semibold my-1;
+    }
+}
+
+.wp-caption-text {
+    @apply text-sm mt-1 font-light #{ #{!important}};
+}
+
+*[id*="attachment"],
+img,
+iframe {
+    max-width: 100%;
+}
+
+.container-2 {
+    @apply mx-auto px-8 lg:px-28 xl:px-40 max-w-[768px] md:max-w-[640px] lg:max-w-[1024px] xl:max-w-[1280px];
+}
+
+a {
+    @apply no-underline cursor-pointer hover:text-accent;
+}
+
+p {
+    @apply text-base lg:text-lg font-normal;
+}
+
+strong,
+b {
+    @apply font-bold;
+}
+h1, .h1 {
+    @apply text-5xl lg:text-[68px] font-medium tracking-wide leading-none;
+}
+h2, .h2 {
+    @apply text-2xl lg:text-5xl font-medium;
+}
+h3, .h3 {
+    @apply text-xl lg:text-4xl font-medium;
+}
+h4, .h4 {
+    @apply text-xl lg:text-[28px] font-medium tracking-normal leading-normal;
+}
+h5, .h5{
+    @apply text-lg lg:text-[22px] font-medium tracking-normal leading-normal;
+}
+h6, .h6{
+    @apply text-base lg:text-lg font-medium;
+}
+
+// .custom-shadow{
+//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+// }
